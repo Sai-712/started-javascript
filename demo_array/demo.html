@@ -1,0 +1,47 @@
+<htm>
+    <head>java script tutorials</head>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        let cars =["bmw","volvo","honda"];
+        document.getElementById("demo").innerHTML=cars;
+
+        let len =cars.length;
+        document.getElementById("demo").innerHTML=len;
+
+        let last = cars[cars.length -1];
+        document.getElementById("demo").innerHTML=last;
+
+        cars.forEach((item, index, array) =>{console.log(item, index);});
+
+        document.getElementById("demo").innerHTML=cars.toString();
+
+        let last1=cars.pop();
+        document.getElementById("demo").innerHTML= last1;
+        let last2 = cars[cars.length -1];
+        console.log(last2);
+       
+       cars.push("audi");
+       document.getElementById("demo").innerHTML=cars;
+
+       cars.shift();
+       document.getElementById("demo").innerHTML=cars;
+       
+       cars.unshift("hyndayi");
+       document.getElementById("demo").innerHTML=cars();
+
+       let bikes=["suzike","yamaha","royal enfield"];
+       let vehicles=cars.concat(bikes);
+       document.getElementById("demo").innerHTML=vehicles;
+
+     let num1 = [1,2,3,4,5];
+     let num2 = num1.map(multiply);
+     function multiply(value){
+        return value *2;
+     }
+     document.getElementById("demo").innerHTML =num2;
+
+    </script>
+
+</htm>
